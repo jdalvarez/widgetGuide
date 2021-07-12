@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".selActivity"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:tag="checkbox1"
+        android:text="@string/casilla_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="validaSeleccion"/>
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:tag="checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/casilla_2"
+        android:onClick="validaSeleccion"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:tag="switch1"
+        android:text="Volumen alto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="validaSeleccion"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:id="@+id/radiouno"
+            android:tag="radiouno"
+            android:text="Radio Uno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="validaSeleccion"/>
+        <RadioButton
+            android:id="@+id/radiodos"
+            android:tag="radiodos"
+            android:text="Radio Dos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="validaSeleccion"/>
+    </RadioGroup>
+</LinearLayout>
